@@ -27,6 +27,7 @@ func main() {
 		}
 		containerName := os.Args[2]
 		container.RunContainer(containerName)
+	default:
 		fmt.Printf("Unknown command: %s\n", command)
 		os.Exit(1)
 	}
